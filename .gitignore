@@ -1,24 +1,36 @@
-# Logs
-logs
-*.log
+# --- Bağımlılıklar (Çok yer kaplar, yüklenmez) ---
+node_modules
+/node_modules
+
+# --- Next.js Derleme Dosyaları ---
+/.next/
+/out/
+/build
+/dist
+
+# --- GÜVENLİK (Bunlar ASLA GitHub'a gitmemeli) ---
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+
+# --- Loglar ve Hata Kayıtları ---
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+*.log
 
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# --- Editör Ayarları (Gereksiz) ---
+.vscode/
+.idea/
+*.swp
+*.swo
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+
+# --- Yedekler ve Sıkıştırılmış Dosyalar ---
+_backup/
+*.zip
+*.rar
+i̇sg-pro-taki̇p.zip
