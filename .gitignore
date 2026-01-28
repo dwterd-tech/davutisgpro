@@ -1,5 +1,5 @@
-# --- Bağımlılıklar (Çok yer kaplar, yüklenmez) ---
-node_modules
+# --- Bağımlılıklar ---
+node_modules/
 /node_modules
 
 # --- Next.js Derleme Dosyaları ---
@@ -11,26 +11,25 @@ node_modules
 # --- GÜVENLİK (Bunlar ASLA GitHub'a gitmemeli) ---
 .env
 .env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env.*.local
 *.pem
 
-# --- Loglar ve Hata Kayıtları ---
+# --- Veritabanı (Burası Çok Önemli) ---
+*.db
+*.sqlite
+dev.db
+dev.db-journal
+
+# --- Loglar ve Gereksizler ---
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 *.log
-
-# --- Editör Ayarları (Gereksiz) ---
 .vscode/
 .idea/
-*.swp
-*.swo
 .DS_Store
 
-# --- Yedekler ve Sıkıştırılmış Dosyalar ---
+# --- Yedekler ve Zip Dosyaları ---
 _backup/
 *.zip
 *.rar
-i̇sg-pro-taki̇p.zip
